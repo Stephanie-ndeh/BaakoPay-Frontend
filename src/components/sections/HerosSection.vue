@@ -11,16 +11,18 @@ import BaseButton from "../bases/BaseButton.vue";
     >
       <div class="space-y-[10px] lg:space-y-[20px] flex flex-col">
         <Transition name="fade" appear>
-          <span
-            class="text-dark-100 lg:text-white text-2xl lg:text-4xl font-bold lg:leading-[50px]"
-          >
-            FAST AND SECURE DIGITAL PAYMENTS FOR CEMENTS TRANSACTIONS
-          </span>
-        </Transition>
-        <Transition appear name="fade">
-          <span class="text-dark-100 lg:text-secondary-100 text-xl font-medium">
-            Easily manage payments and track transactions in real time
-          </span>
+          <div class="flex flex-col gap-5">
+            <span
+              class="text-dark-100 lg:text-white text-2xl lg:text-4xl font-bold lg:leading-[50px]"
+            >
+              FAST AND SECURE DIGITAL PAYMENTS FOR CEMENTS TRANSACTIONS
+            </span>
+            <span
+              class="text-dark-100 lg:text-secondary-100 text-xl font-medium"
+            >
+              Easily manage payments and track transactions in real time
+            </span>
+          </div>
         </Transition>
       </div>
       <div class="flex space-x-[15px] w-full lg:w-fit">
@@ -39,16 +41,20 @@ import BaseButton from "../bases/BaseButton.vue";
 .fade-enter-from {
   opacity: 0;
 }
+
 .fade-enter-active,
 .fade-leave-active {
   transition: opacity 3s ease;
 }
+
 .fade-enter-to {
   opacity: 1;
 }
+
 .fade-leave-from {
   opacity: 1;
 }
+
 .fade-leave-to {
   opacity: 0;
 }
